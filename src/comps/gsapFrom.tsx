@@ -6,7 +6,7 @@ export default function gsapFrom() {
         gsap.fromTo("#yo", 
             {   y:0,
                 x:0,
-                color:"green",
+                backgroundColor:"green",
                 borderRadius:0,
 
             },

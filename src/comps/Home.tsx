@@ -2,7 +2,7 @@ import { useGSAP } from "@gsap/react"
 import { Link } from "react-router-dom"
 import gsap from "gsap"
 
-const animations = [
+export const animations = [
     {
         title: "gsapto",
         description: "learning gsap to",
@@ -17,6 +17,16 @@ const animations = [
         title: "gsapfrom",
         description: "gsap from practice",
         path: "/gsapfrom"
+    },
+    {
+        title: "stagger",
+        description: "gsap stagger practice",
+        path: "/gsapstag"
+    },
+    {
+        title: "text",
+        description: "gsap text practice",
+        path: "/gsaptext"
     }
 ]
 
@@ -61,14 +71,13 @@ export default function Home () {
             stagger:0.07,
             ease:"back.inOut"
         }
-        )
+    )
 
-        // gsap.
     },[])
 
     return(
     <main className="min-h-screen">
-        <ul className="flex justify-center gap-10 p-5 bg-fuchsia-400 w-120 h-10 mx-auto my-10 rounded-[23px] items-center">
+        <ul className="flex justify-center gap-10 p-5 bg-fuchsia-400 max-w-200 h-10 mx-auto my-10 rounded-[23px] items-center">
             {animations.map((animation, index)=>(
                 <li
                     key={index}
@@ -97,9 +106,10 @@ export default function Home () {
             <h1 className="stag inline-block">o</h1>
             <h1 className="stag inline-block">n</h1>
             <h1 className=" inline-block">   </h1>
-            <h1 className=" inline-block">   Practice</h1>
+            <h1 className=" inline-block"> Practice</h1>
         </h1>
         </div>
+        <div className="flex justify-center items-center min-h-[50vh]"></div>
     </main>
     )
 }

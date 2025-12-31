@@ -5,8 +5,21 @@
   --font-arvo: 'Arvo', sans-serif;
   --font-stack-sans-notch: 'Stack Sans Notch' sans-serif;
   --font-raleway: 'Raleway', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+  --font-stack: 'Stack Sans Notch', sans-serif
 
 }
+@utility text-gradient {
+    background: linear-gradient(to bottom, #ffffff, #898989);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* @font-face {
+  font-family: Stack Sans Notch;
+  src: url('../fonts/StackSansNotch-VariableFont_wght.ttf') format('.ttf');
+} */
 
 :root {
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

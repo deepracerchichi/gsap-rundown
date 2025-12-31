@@ -28,7 +28,7 @@ export default function GsapTo() {
         </div> */}
         
         <div className="mt-15">
-            <ReturnArrow />
+            <ReturnArrow className="items-center mx-15 my-auto"/>
             <div id="greeny" className="w-20 h-20 rounded-full bg-green-400 my-10"></div>
         </div>
         </>
